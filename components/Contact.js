@@ -14,12 +14,7 @@ const Contact = () => {
           <input className="email-input" name="email" type="text" />
           <label htmlFor="message">Message</label>
           <textarea className="msg-input" name="message" />
-          <Button
-            onClick={submitHandler}
-            className="send-btn"
-            type="submit"
-            text="Send"
-          ></Button>
+          <Button className="send-btn" text="Send"></Button>
         </form>
       </div>
       <div className="arrow-ctn">
