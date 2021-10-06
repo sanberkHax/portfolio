@@ -1,18 +1,25 @@
 import Button from './Button';
-import { twitterSvg, githubSvg } from '../assets/svgPaths';
 const Contact = () => {
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
   return (
     <section id="contact" className="contact">
       <h1>Contact Me</h1>
       <div className="contact-content">
-        <form className="form">
+        <form name="contact" className="form" data-netlify="true">
           <label htmlFor="name">Name</label>
           <input className="name-input" type="text" />
           <label htmlFor="e-mail">E-Mail</label>
           <input className="email-input" type="text" />
           <label htmlFor="message">Message</label>
           <textarea className="msg-input" />
-          <Button className="send-btn" text="Send"></Button>
+          <Button
+            onClick={submitHandler}
+            className="send-btn"
+            type="submit"
+            text="Send"
+          ></Button>
         </form>
       </div>
       <div className="arrow-ctn">

@@ -22,8 +22,8 @@ const Projects = () => {
           <h2>Showcase Video</h2>
           <div className="preview">Preview</div>
           <div className="btn-container">
-            <Button class="repository-btn" text="Repository" />
-            <Button class="live-btn" text="Live Site" />
+            <Button type="button" class="repository-btn" text="Repository" />
+            <Button type="button" class="live-btn" text="Live Site" />
           </div>
         </div>
       </div>
