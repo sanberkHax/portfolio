@@ -9,11 +9,11 @@ const Contact = () => {
       <div className="contact-content">
         <form name="contact" className="form" data-netlify="true">
           <label htmlFor="name">Name</label>
-          <input className="name-input" type="text" />
-          <label htmlFor="e-mail">E-Mail</label>
-          <input className="email-input" type="text" />
+          <input className="name-input" type="text" name="name" />
+          <label htmlFor="email">E-Mail</label>
+          <input className="email-input" name="email" type="text" />
           <label htmlFor="message">Message</label>
-          <textarea className="msg-input" />
+          <textarea className="msg-input" name="message" />
           <Button
             onClick={submitHandler}
             className="send-btn"
