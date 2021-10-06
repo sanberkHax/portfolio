@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-padding: 20px 0;
+}
+body {
+  background-image: url(../../assets//img/bg.png),
+    linear-gradient(#044569, #001d23);
+  background-size: cover;
+  overflow-x: hidden;
+}
+button {
+  background-color: transparent;
+  color: white;
+}
+
+p {
+  color: black;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 0rem 7rem;
+}
+footer {
+  background-color: $primary-blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+
+  .icon-ctn {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 10%;
+    svg {
+      path {
+        fill: black;
+      }
+      &:hover path {
+        fill: white;
+      }
+      width: 3rem;
+    }
+  }
+}

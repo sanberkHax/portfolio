@@ -1,0 +1,122 @@
+.about {
+  display: flex;
+  position: relative;
+  margin: 20rem 0;
+  height: 100vh;
+  scroll-snap-align: start;
+  // scroll-snap-stop: always;
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 50px;
+    height: 100%;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $primary-blue;
+      height: 3px;
+      width: 7rem;
+      left: 4.5rem;
+      right: 0;
+      top: 7rem;
+      bottom: 0;
+    }
+    .card {
+      margin-top: 4rem;
+    }
+  }
+  .skills-ctn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 50px;
+    height: 100%;
+    position: relative;
+    .skills-title {
+      &::after {
+        content: '';
+        position: absolute;
+        background-color: $primary-blue;
+        height: 3px;
+        width: 5rem;
+        left: 4.5rem;
+        right: 0;
+        top: 7rem;
+        bottom: 0;
+      }
+    }
+    .skills-details-ctn {
+      svg {
+        path {
+          fill: $secondary-blue;
+        }
+        &:hover path {
+          fill: white;
+        }
+        margin: 10px;
+        width: 5rem;
+      }
+    }
+  }
+}
+
+.development-ctn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  //   .development-title {
+  //     &::after {
+  //       content: '';
+  //       position: absolute;
+  //       background-color: $primary-blue;
+  //       height: 3px;
+  //       width: 44rem;
+  //       left: 5rem;
+  //       right: 0;
+  //       top: 3.5rem;
+  //       bottom: 0;
+  //     }
+  //   }
+}
+.design-tools-ctn {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .design-ctn {
+    position: relative;
+    // .design-title {
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     background-color: $primary-blue;
+    //     height: 3px;
+    //     width: 12.5rem;
+    //     left: 0;
+    //     right: 0;
+    //     top: 3.5rem;
+    //     bottom: 0;
+    //   }
+    // }
+  }
+  .tools-ctn {
+    position: relative;
+    // .tools-title {
+    //   &::after {
+    //     content: '';
+    //     position: absolute;
+    //     background-color: $primary-blue;
+    //     height: 3px;
+    //     width: 6.2rem;
+    //     left: 0rem;
+    //     right: 0;
+    //     top: 3.5rem;
+    //     bottom: 0;
+    //   }
+    // }
+  }
+}
