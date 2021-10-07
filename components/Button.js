@@ -1,5 +1,9 @@
 const Button = (props) => {
-  return <button className={props.class}>{props.text}</button>;
+  return (
+    <a href={props.href} className={props.class}>
+      {props.text}
+    </a>
+  );
 };
 
 export default Button;

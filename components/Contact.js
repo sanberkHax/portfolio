@@ -14,16 +14,14 @@ const Contact = () => {
           <input className="email-input" name="email" type="text" />
           <label htmlFor="message">Message</label>
           <textarea className="msg-input" name="message" />
-          <Button className="send-btn" text="Send"></Button>
+          <Button class="send-btn" text="Send"></Button>
         </form>
       </div>
-      <div className="arrow-ctn">
-        <a href="#about">
+      <div className="home-arrow-ctn">
+        <a href="#home">
           <i className="arrow"></i>
         </a>
       </div>
-      <div className="skew-1"></div>
-      <div className="skew-2"></div>
     </section>
   );
 };

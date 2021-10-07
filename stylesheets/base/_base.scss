@@ -30,8 +30,8 @@ a {
 }
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  -ms-scroll-snap-type: y mandatory;
+  // scroll-snap-type: y mandatory;
+  // -ms-scroll-snap-type: y mandatory;
   scroll-padding: 30px 0;
 }
 body {
@@ -55,26 +55,4 @@ label {
 
 main {
   padding: 0rem 7rem;
-}
-footer {
-  background-color: $primary-blue;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 5rem;
-
-  .icon-ctn {
-    display: flex;
-    justify-content: space-around;
-    flex-basis: 10%;
-    svg {
-      path {
-        fill: black;
-      }
-      &:hover path {
-        fill: white;
-      }
-      width: 3rem;
-    }
-  }
 }

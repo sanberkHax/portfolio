@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <Name></Name>
-      <Introduction></Introduction>
+      {/* <Introduction></Introduction> */}
       <div className="arrow-ctn">
         <a href="#about">
           <i className="arrow"></i>

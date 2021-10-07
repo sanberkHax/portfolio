@@ -4,7 +4,7 @@ import About from '../components/About';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
-import { twitterSvg, githubSvg } from '../assets/svgPaths';
+import { twitterSvg, githubSvg, gmailSvg } from '../assets/svgPaths';
 export default function HomePage() {
   return (
     <div>
@@ -25,6 +25,7 @@ export default function HomePage() {
         <div className="icon-ctn">
           {twitterSvg}
           {githubSvg}
+          {gmailSvg}
         </div>
       </footer>
     </div>

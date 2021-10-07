@@ -1,6 +1,6 @@
 .contact {
   display: flex;
-  height: 90vh;
+  height: 88vh;
   flex-direction: column;
   padding: 0 5rem;
   scroll-snap-align: start;
@@ -66,5 +66,12 @@
       }
       width: 10rem;
     }
+  }
+}
+
+.home-arrow-ctn {
+  transform: rotate(180deg);
+  i {
+    margin-bottom: -25rem;
   }
 }
