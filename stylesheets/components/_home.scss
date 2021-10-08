@@ -9,23 +9,25 @@
   // scroll-snap-stop: always;
   .skew-1 {
     position: absolute;
-    width: 150rem;
+    width: 200rem;
     height: 10rem;
     left: -20rem;
-    top: 55rem;
+    top: 54rem;
     background: $primary-blue;
-    transform: matrix(1, -0.05, -0.08, -1, 0, 0);
+    transform: skew(-50deg, -3deg);
+    transform: rotate(25deg);
     overflow: hidden;
   }
   .skew-2 {
     overflow: hidden;
     position: absolute;
     width: 150rem;
-    height: 10rem;
+    height: 20rem;
     left: -20rem;
     top: 56rem;
     background: #ffffff;
-    transform: matrix(1, -0.05, -0.08, -1, 0, 0);
+    transform: skew(-50deg, -3deg);
+    border-bottom: 2rem solid $primary-blue;
   }
 }
 
