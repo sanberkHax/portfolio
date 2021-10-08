@@ -4,7 +4,7 @@ import Project from './Project';
 import Arrows from './Arrows';
 const Projects = () => {
   return (
-    <section id="projects" className="projects">
+    <section data-aos="zoom-out" id="projects" className="projects">
       <h1>Projects</h1>
       <h2>Work in progress...</h2>
       {/* <Arrows href="#contact"></Arrows> */}

@@ -1,7 +1,9 @@
 .contact {
   display: flex;
   height: 88vh;
-  flex-direction: column;
+  // flex-direction: column;
+  justify-content: center;
+  // align-items: center;
   padding: 0 5rem;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -22,7 +24,8 @@
 
   .contact-content {
     display: flex;
-    justify-content: space-around;
+    flex-basis: 80%;
+    justify-content: center;
     align-items: center;
   }
   .form {
@@ -31,7 +34,7 @@
     flex-direction: column;
     padding-top: 1rem;
     align-items: center;
-    flex-basis: 45%;
+    flex-basis: 60%;
     label {
       margin-top: 2rem;
     }

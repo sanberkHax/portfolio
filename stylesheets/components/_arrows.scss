@@ -1,0 +1,78 @@
+.arrow-ctn {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  // top: 45rem;
+  // left: 50%;
+  &:hover svg {
+    fill: $secondary-blue;
+  }
+  svg {
+    width: 5rem;
+    transform: rotate(90deg);
+  }
+  .arrow-white {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    fill: white;
+  }
+  .arrow-blue {
+    fill: $primary-blue;
+  }
+  animation-iteration-count: infinite;
+  animation-name: bounceDown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+.home-arrow-ctn {
+  position: relative;
+  &:hover svg {
+    fill: $secondary-blue;
+  }
+  svg {
+    width: 5rem;
+    transform: rotate(90deg);
+  }
+  .arrow-white {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    fill: white;
+  }
+  .arrow-blue {
+    fill: $primary-blue;
+  }
+  animation-iteration-count: infinite;
+  animation-name: bounceUp;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  align-self: center;
+}
+
+@keyframes bounceDown {
+  0% {
+    top: 1rem;
+  }
+  50% {
+    top: 4rem;
+  }
+  100% {
+    top: 1rem;
+  }
+}
+@keyframes bounceUp {
+  0% {
+    bottom: 1rem;
+  }
+  50% {
+    bottom: 4rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+}

@@ -1,6 +1,12 @@
 const Button = (props) => {
   return (
-    <a href={props.href} className={props.class}>
+    <a
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-bottom"
+      data-aos-delay={props.delay}
+      href={props.href}
+      className={props.class}
+    >
       {props.text}
     </a>
   );
