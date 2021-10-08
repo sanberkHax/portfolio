@@ -7,14 +7,16 @@
   display: flex;
   width: 30rem;
   justify-content: flex-end;
-  border-bottom: 3px solid #79ffff;
+  border-top: 3px solid $primary-blue;
+  border-bottom: 3px solid $primary-blue;
   z-index: 20;
+  background-color: rgba(0, 69, 90, 0.561);
   a {
     transition: ease-in-out 0.1s;
     padding: 16px;
     margin-right: 1.5rem;
     &:hover {
-      background-color: #79ffffc4;
+      background-color: $primary-blue;
       color: black;
     }
   }

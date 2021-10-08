@@ -139,3 +139,22 @@ export const gmailSvg = (
     </svg>
   </a>
 );
+
+export const whiteArrowSvg = (
+  <svg
+    className="arrow-white"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z" />
+  </svg>
+);
+export const blueArrowSvg = (
+  <svg
+    className="arrow-blue"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path d="M10.477 0h-8.977l12.024 12-12.024 12h8.977l12.023-12z" />
+  </svg>
+);

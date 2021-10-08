@@ -1,16 +1,11 @@
-import Introduction from './Introduction';
+import Arrows from './Arrows';
 import Name from './Name';
 
 const Home = () => {
   return (
     <section id="home" className="home">
-      <Name></Name>
-      {/* <Introduction></Introduction> */}
-      <div className="arrow-ctn">
-        <a href="#about">
-          <i className="arrow"></i>
-        </a>
-      </div>
+      <Name />
+      <Arrows href="#about" />
       <div className="skew-1"></div>
       <div className="skew-2"></div>
     </section>

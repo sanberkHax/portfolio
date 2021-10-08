@@ -1,4 +1,5 @@
 import Card from './Card';
+import Arrows from './Arrows';
 import {
   htmlSvg,
   cssSvg,
@@ -15,28 +16,23 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-content">
-        <div className="about-me-ctn">
-          <h1>About</h1>
+        <div data-aos="fade-right" className="about-me-ctn">
+          <h1>About Me</h1>
           <Card>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              incidunt voluptatibus praesentium, sed in nesciunt assumenda
-              reprehenderit nihil eligendi animi accusantium enim expedita ipsum
-              soluta laboriosam quaerat repellendus dignissimos distinctio ex
-              id! Adipisci vero voluptatum temporibus aliquam, accusantium ad
-              rerum dolorum placeat. Autem suscipit rerum optio odio repellat
-              maxime! Eaque, excepturi similique. Voluptate dolorum possimus
-              quod numquam repellat deleniti aliquam. Delectus obcaecati tempora
-              provident voluptatum, modi facilis, eligendi mollitia in id et
-              tempore alias ut odio veritatis numquam minus repudiandae veniam
-              unde esse, distinctio fugit explicabo architecto est. Facere
-              veritatis iure ratione. Blanditiis delectus iure ad repellat
-              fugiat ipsum maxime!
+              Im a self taught Front End Developer who is passionate about
+              creating good user experience and designs. After focusing on
+              animation and graphic design for some time and feeling something
+              was missing, i have merged my creative and logical side together
+              and dedicated myself to Front End Development.
+            </p>
+            <p>
+              When im not coding im either playing video games or making music.
             </p>
           </Card>
         </div>
 
-        <div className="skills-ctn">
+        <div data-aos="fade-left" className="skills-ctn">
           <h1 className="skills-title">Skills</h1>
           <div className="skills-details-ctn">
             <div className="development-ctn">
@@ -67,11 +63,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="arrow-ctn">
-        <a href="#projects">
-          <i className="arrow"></i>
-        </a>
-      </div>
+      {/* <Arrows href="#projects"></Arrows> */}
     </section>
   );
 };

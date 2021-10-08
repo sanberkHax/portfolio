@@ -7,6 +7,7 @@
 .repo-btn,
 .live-btn,
 .send-btn {
+  cursor: pointer;
   margin-top: 5rem;
   text-align: center;
   padding: 12px !important;
@@ -17,7 +18,7 @@
   &:hover {
     border: 3px solid #ffffff;
     color: black;
-    background-color: #79ffffc4;
+    background-color: $primary-blue;
     transform: translateY(-2px);
     transition: ease-in-out 0.1s;
   }
