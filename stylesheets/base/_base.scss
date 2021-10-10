@@ -53,6 +53,6 @@ label {
 main {
   padding: 0rem 7rem;
   @media (max-width: $large) {
-    padding: 0rem;
+    padding: auto;
   }
 }

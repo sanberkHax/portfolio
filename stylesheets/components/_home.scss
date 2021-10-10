@@ -5,6 +5,8 @@
   align-items: center;
   height: 100vh;
   scroll-snap-align: start;
+  overflow-x: hidden;
+
   flex-direction: column;
 
   // scroll-snap-stop: always;
