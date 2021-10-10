@@ -6,6 +6,7 @@
   height: 100vh;
   scroll-snap-align: start;
   flex-direction: column;
+
   // scroll-snap-stop: always;
   .skew-1 {
     position: absolute;
@@ -60,6 +61,16 @@
   .name-text-1 {
     margin-right: 45rem;
     margin-bottom: -1rem;
+    @media (max-width: $large) {
+      margin-bottom: -2rem;
+      font-size: 1.5rem;
+      margin-right: 35rem;
+    }
+    @media (max-width: $medium) {
+      margin-bottom: 0rem;
+      margin-right: 0rem;
+    }
+
     // position: absolute;
     // top: -2rem;
     // left: 0;
@@ -67,7 +78,22 @@
   .name-text-2 {
     position: relative;
     font-size: 5rem;
+    @media (max-width: $large) {
+      font-size: 4rem;
+    }
+    @media (max-width: $medium) {
+      font-size: 3rem;
+    }
     &::after {
+      @media (max-width: $large) {
+        width: 30rem;
+        top: 5rem;
+      }
+      @media (max-width: $medium) {
+        width: 26rem;
+        left: -1rem;
+        top: 4rem;
+      }
       content: '';
       position: absolute;
       background-color: $primary-blue;
@@ -80,6 +106,15 @@
     }
   }
   .name-text-3 {
+    @media (max-width: $large) {
+      font-size: 2rem;
+    }
+    @media (max-width: $medium) {
+      font-size: 1.5rem;
+      margin-top: 0rem;
+      margin-left: 0rem;
+    }
+
     font-size: 2rem;
     margin-top: -1rem;
     margin-left: 20rem;

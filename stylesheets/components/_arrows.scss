@@ -1,33 +1,3 @@
-.arrow-ctn {
-  @extend %arrows;
-  margin-top: 10rem;
-  // display: flex;
-  // flex-direction: column;
-  // position: relative;
-  // align-items: center;
-  // justify-content: center;
-  // &:hover svg {
-  //   fill: $secondary-blue;
-  // }
-  svg {
-    // width: 5rem;
-    transform: rotate(90deg);
-  }
-  .arrow-white {
-    // position: absolute;
-    // top: -3rem;
-    left: 0;
-    // fill: white;
-  }
-  // .arrow-blue {
-  //   fill: $primary-blue;
-  // }
-  // animation-iteration-count: infinite;
-  animation-name: bounceDown;
-  // animation-duration: 3s;
-  // animation-timing-function: ease-in-out;
-}
-
 %arrows {
   display: flex;
   flex-direction: column;
@@ -38,6 +8,9 @@
     fill: $secondary-blue;
   }
   svg {
+    @media (max-width: $large) {
+      width: 4rem;
+    }
     width: 5rem;
   }
   .arrow-white {
@@ -53,34 +26,31 @@
   animation-timing-function: ease-in-out;
 }
 
-.home-arrow-ctn {
+.home-arrows-ctn {
+  @extend %arrows;
+  margin-top: 10rem;
+  svg {
+    transform: rotate(90deg);
+  }
+  .arrow-white {
+    left: 0;
+  }
+  animation-name: bounceDown;
+}
+
+.contact-arrows-ctn {
+  @media (max-width: $medium) {
+    display: none;
+  }
   @extend %arrows;
   flex: 2;
-  // display: flex;
-  // flex-direction: column;
-  // position: relative;
-  // align-items: center;
-  // justify-content: center;
-  // &:hover svg {
-  //   fill: $secondary-blue;
-  // }
   svg {
-    // width: 5rem;
     transform: rotate(-90deg);
   }
-  // .arrow-white {
-  //   position: absolute;
-  //   top: -3rem;
-  //   fill: white;
-  // }
   .arrow-blue {
     position: absolute;
-    // fill: $primary-blue;
   }
-  // animation-iteration-count: infinite;
   animation-name: bounceUp;
-  // animation-duration: 3s;
-  // animation-timing-function: ease-in-out;
 }
 
 @keyframes bounceDown {

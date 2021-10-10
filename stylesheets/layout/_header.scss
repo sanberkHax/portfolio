@@ -1,4 +1,7 @@
 .navbar {
+  @media (max-width: $large) {
+    display: none;
+  }
   position: fixed;
   right: 0;
   top: 0;
@@ -19,5 +22,20 @@
       background-color: $primary-blue;
       color: black;
     }
+  }
+}
+
+.hamburger-menu {
+  z-index: 2;
+  top: 2rem;
+  svg {
+    fill: $primary-blue;
+    width: 3rem;
+  }
+  display: none;
+  @media (max-width: $large) {
+    display: block;
+    position: fixed;
+    right: 2rem;
   }
 }

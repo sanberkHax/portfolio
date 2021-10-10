@@ -19,7 +19,11 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-content">
-        <div data-aos="fade-right" className="about-me-ctn">
+        <div
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-bottom"
+          className="about-me-ctn"
+        >
           <h1>About Me</h1>
           <Card>
             <p>

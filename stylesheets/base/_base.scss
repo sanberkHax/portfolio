@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-
 /**
  * Set up a decent box model on the root element
  */
@@ -30,13 +29,9 @@ a {
 }
 html {
   scroll-behavior: smooth;
-  // scroll-snap-type: y mandatory;
-  // -ms-scroll-snap-type: y mandatory;
   scroll-padding: 30px 0;
 }
 body {
-  // background-image: url(../../assets//img/bg.png),
-  //   linear-gradient(#044569, #001d23);
   background-image: url(../../assets//img/bg.png),
     linear-gradient(#005685, #001d23);
   background-size: cover;
@@ -57,4 +52,7 @@ label {
 
 main {
   padding: 0rem 7rem;
+  @media (max-width: $large) {
+    padding: 0rem;
+  }
 }

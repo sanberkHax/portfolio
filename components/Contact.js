@@ -1,5 +1,4 @@
 import Button from './Button';
-import { whiteArrowSvg, blueArrowSvg } from '../assets/svgPaths';
 import Arrows from './Arrows';
 const Contact = () => {
   const submitHandler = (e) => {
@@ -7,12 +6,12 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="contact">
+      <h1>Contact Me</h1>
       <div
         data-aos="fade-in"
         data-aos-anchor-position="top-bottom"
         className="contact-content"
       >
-        <h1>Contact Me</h1>
         <form name="contact" className="form" data-netlify="true">
           <label htmlFor="name">Name</label>
           <input
@@ -40,10 +39,11 @@ const Contact = () => {
           />
           <Button class="send-btn" text="Send"></Button>
         </form>
-        <div className="home-arrow-ctn">
+        <Arrows class="contact-arrows-ctn" href="#home"></Arrows>
+        {/* <div className="contact-arrow-ctn">
           <a href="#home">{whiteArrowSvg}</a>
           <a href="#home">{blueArrowSvg}</a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

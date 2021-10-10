@@ -7,7 +7,7 @@ const Arrows = (props) => {
       initial={{ y: -500, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 2, duration: 0.3 }}
-      className="arrow-ctn"
+      className={props.class}
     >
       <a href={props.href}>{whiteArrowSvg}</a>
       <a href={props.href}>{blueArrowSvg}</a>
