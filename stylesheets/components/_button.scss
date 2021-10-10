@@ -6,13 +6,14 @@
 .details-btn,
 .repo-btn,
 .live-btn,
-.send-btn {
+.send-btn,
+.resume-btn {
   cursor: pointer;
   margin-top: 5rem;
   text-align: center;
   padding: 12px !important;
   height: 3rem;
-  width: 185px;
+  width: 10rem;
   border: 3px solid #79ffff;
   border-radius: 10px;
   &:hover {
@@ -22,4 +23,8 @@
     transform: translateY(-2px);
     transition: ease-in-out 0.1s;
   }
+}
+
+.resume-btn {
+  align-self: center;
 }

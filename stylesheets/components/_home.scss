@@ -1,6 +1,6 @@
 .home {
   display: flex;
-  // position: relative;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -9,10 +9,10 @@
   // scroll-snap-stop: always;
   .skew-1 {
     position: absolute;
-    width: 200rem;
-    height: 10rem;
-    left: -20rem;
-    top: 54rem;
+    width: 140%;
+    height: 20%;
+    right: 5%;
+    top: 94%;
     background: $primary-blue;
     transform: skew(-50deg, -3deg);
     transform: rotate(25deg);
@@ -21,10 +21,10 @@
   .skew-2 {
     overflow: hidden;
     position: absolute;
-    width: 150rem;
-    height: 20rem;
-    left: -20rem;
-    top: 56rem;
+    width: 140%;
+    height: 25%;
+    right: 5%;
+    top: 92%;
     background: #ffffff;
     transform: skew(-50deg, -3deg);
     border-bottom: 2rem solid $primary-blue;

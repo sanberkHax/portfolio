@@ -11,6 +11,7 @@
   height: 90vh;
   .about-content {
     display: flex;
+    position: relative;
   }
   .about-me-ctn {
     display: flex;
@@ -127,4 +128,16 @@
     //   }
     // }
   }
+}
+.skew-3 {
+  overflow: hidden;
+  // position: absolute;
+  // width: 150rem;
+  // height: 10rem;
+  // left: -4 0rem;
+  // bottom: -20rem;
+  background: #ffffff;
+  // transform: skew(-50deg, -3deg);
+  border-top: 2rem solid $primary-blue;
+  border-bottom: 2rem solid $primary-blue;
 }

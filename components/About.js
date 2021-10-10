@@ -1,5 +1,8 @@
 import Card from './Card';
+import Button from './Button';
 import Arrows from './Arrows';
+import { motion } from 'framer-motion';
+
 import {
   htmlSvg,
   cssSvg,
@@ -30,6 +33,7 @@ const About = () => {
               When im not coding im either playing video games or making music.
             </p>
           </Card>
+          <Button class="resume-btn" text="Resume"></Button>
         </div>
 
         <div data-aos="fade-left" className="skills-ctn">
@@ -63,6 +67,14 @@ const About = () => {
           </div>
         </div>
       </div>
+      <motion.div
+        data-aos="slide-right"
+        data-aos-offset="1000"
+        // initial={{ x: -2500 }}
+        // animate={{ x: 230 }}
+        // transition={{ delay: 1, duration: 1 }}
+        className="skew-3"
+      ></motion.div>
       {/* <Arrows href="#projects"></Arrows> */}
     </section>
   );
