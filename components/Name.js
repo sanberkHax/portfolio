@@ -1,5 +1,9 @@
 import Button from '../components/Button';
-import { motion } from 'framer-motion';
+
+const contactBtnVariants = {
+  visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 1 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 const Name = () => {
   return (
     <div
@@ -18,6 +22,7 @@ const Name = () => {
         Front End Developer
       </h2>
       <Button
+        variants={contactBtnVariants}
         delay="1000"
         href="#contact"
         type="button"

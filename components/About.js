@@ -1,6 +1,6 @@
 import Card from './Card';
 import Button from './Button';
-import Arrows from './Arrows';
+import FadeInContainer from './FadeInContainer';
 import { motion } from 'framer-motion';
 
 import {
@@ -15,15 +15,23 @@ import {
   psSvg,
   gitSvg,
 } from '../assets/svgPaths';
+const aboutMeVariants = {
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, x: -50 },
+};
+const skillsVariants = {
+  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, x: 50 },
+};
+const resumeBtnVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
+  hidden: { opacity: 0, scale: 0 },
+};
 const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-content">
-        <div
-          data-aos="fade-right"
-          data-aos-anchor-placement="top-bottom"
-          className="about-me-ctn"
-        >
+        <FadeInContainer variants={aboutMeVariants} className="about-me-ctn">
           <h1>About Me</h1>
           <Card>
             <p>
@@ -37,10 +45,14 @@ const About = () => {
               When im not coding im either playing video games or making music.
             </p>
           </Card>
-          <Button class="resume-btn" text="Resume"></Button>
-        </div>
+          <Button
+            variants={resumeBtnVariants}
+            class="resume-btn"
+            text="Resume"
+          ></Button>
+        </FadeInContainer>
 
-        <div data-aos="fade-left" className="skills-ctn">
+        <FadeInContainer variants={skillsVariants} className="skills-ctn">
           <h1 className="skills-title">Skills</h1>
           <div className="skills-details-ctn">
             <div className="development-ctn">
@@ -69,7 +81,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </FadeInContainer>
       </div>
       <motion.div
         data-aos="slide-right"
