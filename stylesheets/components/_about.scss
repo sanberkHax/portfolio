@@ -127,19 +127,27 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  @media (max-width: $medium) {
+    font-size: 0.8rem;
+  }
 }
 .design-tools-ctn {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: $medium) {
+    font-size: 0.8rem;
+  }
   .design-ctn {
+    flex-basis: 50%;
     position: relative;
     @media (max-width: $medium) {
       align-self: flex-start;
     }
   }
   .tools-ctn {
+    flex-basis: 50%;
     position: relative;
   }
 }
