@@ -4,6 +4,8 @@ import FadeInContainer from './FadeInContainer';
 import { motion } from 'framer-motion';
 
 import {
+  npmSvg,
+  webpackSvg,
   htmlSvg,
   cssSvg,
   jsSvg,
@@ -39,15 +41,11 @@ const About = () => {
           <h1>About Me</h1>
           <Card>
             <p>
-              Im a self taught Front End Developer who is passionate about
-              creating good user experience and designs. After focusing on
-              animation and graphic design for some time and feeling something
-              was missing, i have merged my creative and logical side together
-              and dedicated myself to Front End Development.
+              {`I'm a Front End Developer with a strong passion for learning new things and challenging myself to be the best version of myself. The more problems i face the more ambitious i get to solve them, not gonna bend the knee to no bug!`}
             </p>
-            <p>
-              When im not coding im either playing video games or making music.
-            </p>
+            <p>{`Chronic perfectionist with a high attention to every detail, quick thinker, problem solver, organised person, intuitive user experience lover.`}</p>
+            <p>{`I'm looking forward to building ambitious and valuable projects that are creative and accesible to anyone.`}</p>
+            <p>{`Besides coding, i love making music and drawing. Send a message to say hi!`}</p>
           </Card>
           <Button
             variants={resumeBtnVariants}
@@ -61,7 +59,7 @@ const About = () => {
           variants={skillsVariants}
           className="skills-ctn"
         >
-          <h1 className="skills-title">Skills</h1>
+          <h1 className="skills-title">{`I have worked with`}</h1>
           <div className="skills-details-ctn">
             <div className="development-ctn">
               <h2 className="development-title">Development</h2>
@@ -85,7 +83,11 @@ const About = () => {
               </div>
               <div className="tools-ctn">
                 <h2 className="tools-title">Tools</h2>
-                <div className="tools-icons-ctn">{gitSvg}</div>
+                <div className="tools-icons-ctn">
+                  {gitSvg}
+                  {webpackSvg}
+                  {npmSvg}
+                </div>
               </div>
             </div>
           </div>

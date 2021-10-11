@@ -13,7 +13,7 @@ const Name = () => {
       transition={{ duration: 0.5 }}
     >
       <h2 data-aos="fade-right" data-aos-delay="200" className="name-text-1">
-        Hi, im
+        {`Hi, I'm`}
       </h2>
       <h1 data-aos="fade-right" data-aos-delay="200" className="name-text-2">
         Sanberk Türker
