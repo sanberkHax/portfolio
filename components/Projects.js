@@ -5,7 +5,8 @@ const projectsVariants = {
 };
 const Projects = () => {
   return (
-    <FadeInContainer
+    <section
+      data-aos="zoom-out"
       variants={projectsVariants}
       id="projects"
       className="projects"
@@ -13,7 +14,7 @@ const Projects = () => {
       <h1>Projects</h1>
       <h2>Work in progress...</h2>
       {/* <Arrows href="#contact"></Arrows> */}
-    </FadeInContainer>
+    </section>
   );
 };
 

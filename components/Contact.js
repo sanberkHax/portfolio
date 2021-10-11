@@ -6,7 +6,7 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="contact">
-      <h1>Contact Me</h1>
+      <h1 data-aos="fade-right">Contact Me</h1>
       <div
         data-aos="fade-in"
         data-aos-anchor-position="top-bottom"

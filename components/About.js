@@ -31,7 +31,11 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="about-content">
-        <FadeInContainer variants={aboutMeVariants} className="about-me-ctn">
+        <div
+          data-aos="fade-right"
+          variants={aboutMeVariants}
+          className="about-me-ctn"
+        >
           <h1>About Me</h1>
           <Card>
             <p>
@@ -50,9 +54,13 @@ const About = () => {
             class="resume-btn"
             text="Resume"
           ></Button>
-        </FadeInContainer>
+        </div>
 
-        <FadeInContainer variants={skillsVariants} className="skills-ctn">
+        <div
+          data-aos="fade-left"
+          variants={skillsVariants}
+          className="skills-ctn"
+        >
           <h1 className="skills-title">Skills</h1>
           <div className="skills-details-ctn">
             <div className="development-ctn">
@@ -81,7 +89,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </FadeInContainer>
+        </div>
       </div>
       <motion.div
         data-aos="slide-right"
