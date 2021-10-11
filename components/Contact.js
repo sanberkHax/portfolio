@@ -6,15 +6,19 @@ const Contact = () => {
   };
   return (
     <section id="contact" className="contact">
-      <h1 data-aos="fade-right">Contact Me</h1>
+      <h1 data-aos-once="true" data-aos="fade-right">
+        Contact Me
+      </h1>
       <div
         data-aos="fade-in"
+        data-aos-once="true"
         data-aos-anchor-position="top-bottom"
         className="contact-content"
       >
         <form name="contact" className="form" data-netlify="true">
           <label htmlFor="name">Name</label>
           <input
+            data-aos-once="true"
             data-aos-anchor-placement="top-bottom"
             data-aos="fade-right"
             className="name-input"
@@ -23,6 +27,7 @@ const Contact = () => {
           />
           <label htmlFor="email">E-Mail</label>
           <input
+            data-aos-once="true"
             data-aos-anchor-placement="top-bottom"
             data-aos="fade-right"
             className="email-input"
@@ -31,6 +36,7 @@ const Contact = () => {
           />
           <label htmlFor="message">Message</label>
           <textarea
+            data-aos-once="true"
             delay="500"
             data-aos-anchor-placement="top-bottom"
             data-aos="fade-right"

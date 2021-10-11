@@ -7,12 +7,18 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 5rem;
-
+  @media (max-width: $medium) {
+    font-size: 1rem;
+  }
   .icon-ctn {
     display: flex;
     justify-content: space-around;
     flex-basis: 10%;
     svg {
+      @media (max-width: $medium) {
+        width: 2rem;
+        margin: 3px;
+      }
       width: 3rem;
       path {
         fill: black;
