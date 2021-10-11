@@ -15,7 +15,8 @@ const Contact = () => {
         data-aos-anchor-position="top-bottom"
         className="contact-content"
       >
-        <form name="contact" action="#" className="form" data-netlify="true">
+        <form name="contact" action="" className="form" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name">Name</label>
           <input
             data-aos-once="true"
