@@ -22,9 +22,9 @@ const Name = () => {
         Front End Developer
       </h2>
       <Button
+        href="#contact"
         variants={contactBtnVariants}
         delay="1000"
-        href="#contact"
         type="button"
         class="contact-btn"
         text="Contact Me"
