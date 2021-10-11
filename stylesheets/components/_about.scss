@@ -11,8 +11,8 @@
   &:before {
     display: block;
     content: ' ';
-    margin-top: 3rem;
-    height: 3rem;
+    margin-top: 0.5rem;
+    height: 0.5rem;
     visibility: hidden;
     pointer-events: none;
   }
@@ -104,6 +104,9 @@
       }
     }
     .skills-details-ctn {
+      @media (max-width: $medium) {
+        margin-top: 20px;
+      }
       svg {
         @media (max-width: $medium) {
           width: 4rem;
