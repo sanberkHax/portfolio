@@ -29,16 +29,16 @@ a {
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding: 30px 0;
+  // scroll-padding: 30px 0;
   width: 100vw;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 body {
   background-image: url(../../assets//img/bg.png),
     linear-gradient(#005685, #001d23);
   background-size: cover;
   width: 100vw;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 button {
   width: 100%;
@@ -59,6 +59,7 @@ label {
 }
 
 main {
+  overflow-x: hidden;
   padding: 0rem 7rem;
   @media (max-width: $large) {
     padding: 0;

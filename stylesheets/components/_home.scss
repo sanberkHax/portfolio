@@ -4,34 +4,34 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  scroll-snap-align: start;
+  // scroll-snap-align: start;
   // overflow-x: hidden;
 
   flex-direction: column;
 
   // scroll-snap-stop: always;
-  .skew-1 {
-    position: absolute;
-    width: 140%;
-    height: 20%;
-    right: 5%;
-    top: 94%;
-    background: $primary-blue;
-    transform: skew(-50deg, -3deg);
-    transform: rotate(25deg);
-    overflow: hidden;
-  }
-  .skew-2 {
-    overflow: hidden;
-    position: absolute;
-    width: 140%;
-    height: 25%;
-    right: 5%;
-    top: 92%;
-    background: #ffffff;
-    transform: skew(-50deg, -3deg);
-    border-bottom: 2rem solid $primary-blue;
-  }
+  // .skew-1 {
+  //   position: absolute;
+  //   width: 140%;
+  //   height: 20%;
+  //   right: 5%;
+  //   top: 94%;
+  //   background: $primary-blue;
+  //   transform: skew(-50deg, -3deg);
+  //   transform: rotate(25deg);
+  //   overflow: hidden;
+  // }
+  // .skew-2 {
+  //   overflow: hidden;
+  //   position: absolute;
+  //   width: 140%;
+  //   height: 25%;
+  //   right: 5%;
+  //   top: 92%;
+  //   background: #ffffff;
+  //   transform: skew(-50deg, -3deg);
+  //   border-bottom: 2rem solid $primary-blue;
+  // }
 }
 
 // .intro-ctn {
