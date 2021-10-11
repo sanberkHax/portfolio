@@ -22,7 +22,7 @@ export default function HomePage() {
         <Contact />
       </main>
       <footer>
-        <p>Designed & Built by Sanberk Türker</p>
+        <p className="footer-text">Designed & Built by Sanberk Türker</p>
         <div className="icon-ctn">
           {twitterSvg}
           {githubSvg}
