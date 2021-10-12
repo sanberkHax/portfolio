@@ -61,6 +61,9 @@ label {
 main {
   overflow-x: hidden;
   padding: 0rem 7rem;
+  @media (max-width: $largest) {
+    padding: 0rem 1rem;
+  }
   @media (max-width: $large) {
     padding: 0;
   }

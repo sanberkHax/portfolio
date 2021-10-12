@@ -12,12 +12,8 @@
     position: relative;
     @media (max-width: $medium) {
       align-self: center;
-      font-size: 1.5rem;
     }
     @media (max-width: $large) {
-      font-size: 2rem;
-    }
-    @media (max-width: $small) {
       font-size: 2rem;
     }
     &::after {
