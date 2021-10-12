@@ -3,11 +3,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  // overflow-x: hidden;
-
   margin-top: 35rem;
-  // height: 100vh;
-  // display: block;
   &:before {
     display: block;
     content: ' ';
@@ -20,9 +16,8 @@
       height: 0.5rem;
     }
   }
-  // height: 100vh;
+
   @media (max-width: 1500px) {
-    // margin-top: 25rem;
   }
   @media (max-width: $large) {
     height: auto;
@@ -31,14 +26,12 @@
   flex-direction: column;
 
   .about-content {
-    // padding-top: 20rem;
-    // height: 100%;
     @media (max-width: $large) {
       flex-direction: column;
     }
     display: flex;
     justify-content: center;
-    // align-items: center;
+
     position: relative;
   }
   .about-me-ctn {
@@ -53,21 +46,6 @@
     @media (max-width: $small) {
       padding: 1rem;
     }
-    // h1 {
-    //   @media (max-width: $medium) {
-    //     font-size: 1.5rem;
-    //   }
-    // }
-    // p {
-    //   @media (max-width: $large) {
-    //     font-size: 0.9rem;
-    //   }
-    // }
-
-    // @media (max-width: $medium) {
-    //   font-size: 1rem;
-    //   padding-right: 2rem;
-    // }
     &::after {
       content: '';
       position: absolute;
@@ -91,10 +69,6 @@
     }
     .card {
       margin-top: 4rem;
-      // @media (max-width: $medium) {
-      //   margin-top: 1rem;
-      //   padding: 1rem;
-      // }
       @media (max-width: $small) {
         margin-top: 1rem;
         padding: 1rem;
@@ -113,13 +87,8 @@
     @media (max-width: $small) {
       padding: 1rem;
     }
-    // @media (max-width: $large) {
-    //   padding-left: 1rem;
-    // }
+
     .skills-title {
-      // @media (max-width: $medium) {
-      //   font-size: 1.5rem;
-      // }
       &::after {
         content: '';
         position: absolute;
@@ -143,16 +112,11 @@
       }
     }
     .skills-details-ctn {
-      // @media (max-width: $medium) {
-      //   margin-top: 20px;
-      // }
       svg {
         @media (max-width: $large) {
           width: 4.5rem;
         }
-        // @media (max-width: $medium) {
-        //   width: 4rem;
-        // }
+
         path {
           fill: $secondary-blue;
         }
@@ -172,18 +136,13 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  // @media (max-width: $medium) {
-  //   font-size: 0.8rem;
-  // }
 }
 .design-tools-ctn {
   text-align: center;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  // @media (max-width: $medium) {
-  //   font-size: 0.8rem;
-  // }
+
   .design-ctn {
     flex-basis: 50%;
     position: relative;

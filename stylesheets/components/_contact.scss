@@ -3,22 +3,15 @@
   height: 100vh;
   margin-top: 25rem;
   padding: 0 2rem;
-  // padding-top: 5rem;
-  // overflow-y: auto;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
+
   h1 {
     position: relative;
     @media (max-width: $medium) {
       align-self: center;
     }
-    @media (max-width: $large) {
-      font-size: 2rem;
-    }
-    @media (max-width: $small) {
-      // margin-top: 7rem;
-    }
+
     &::after {
       content: '';
       position: absolute;
@@ -47,7 +40,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    // padding-top: 1rem;
+
     align-items: center;
     label {
       margin-top: 2rem;

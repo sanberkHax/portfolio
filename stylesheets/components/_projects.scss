@@ -1,10 +1,8 @@
 .projects {
   scroll-snap-align: start;
-  // scroll-snap-stop: always;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  // overflow-x: hidden;
 
   margin-top: 25rem;
   align-items: center;
@@ -12,17 +10,7 @@
     align-self: center;
   }
   h1 {
-    @media (max-width: $large) {
-      font-size: 2rem;
-    }
-    // @media (max-width: $medium) {
-    //   font-size: 1.5rem;
-    // }
-    // @media (max-width: $small) {
-    //   font-size: 2rem;
-    // }
     margin-top: 1rem;
-    font-size: 3rem;
     align-self: center;
     position: relative;
     &::after {
