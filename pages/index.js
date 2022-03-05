@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import About from '../components/About';
 import Home from '../components/Home';
-import Project from '../components/Project';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import { twitterSvg, githubSvg, gmailSvg } from '../assets/svgPaths';
