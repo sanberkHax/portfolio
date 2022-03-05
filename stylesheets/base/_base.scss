@@ -28,6 +28,7 @@ a {
   color: white;
 }
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
@@ -55,7 +56,7 @@ label {
 
 main {
   overflow-x: hidden;
-  padding: 0rem 7rem;
+  padding: 0rem 4rem;
   @media (max-width: $largest) {
     padding: 0rem 1rem;
   }

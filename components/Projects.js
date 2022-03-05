@@ -23,7 +23,7 @@ const Projects = () => {
             />
           </div>
           <div className="stack-organizer__details">
-            <div className="card stack-organizer__card">
+            <div className="card stack-organizer__title-card">
               <h2 className="stack-organizer__title">Stack Organizer</h2>
             </div>
             <div className="card stack-organizer__card">

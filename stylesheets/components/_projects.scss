@@ -42,13 +42,13 @@
       text-align: center;
     }
   }
-  h2 {
-    @media (max-width: $medium) {
-      font-size: 2rem;
-    }
-    font-size: 4rem;
-    text-align: center;
-  }
+  // h2 {
+  //   @media (max-width: $medium) {
+  //     font-size: 2rem;
+  //   }
+  //   font-size: 4rem;
+  //   text-align: center;
+  // }
 }
 .project-ctn {
   display: flex;
@@ -126,20 +126,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 45rem;
     height: 100%;
-    min-height: 100%;
-    min-width: 39rem;
+    min-width: 45rem;
     @media (max-width: $large) {
-      min-height: 20rem;
-      min-width: 20rem;
+      width: 40rem;
+      min-height: 25rem;
+      min-width: 40rem;
     }
+    @media (max-width: $medium) {
+      min-height: 18rem;
+      width: 28rem;
+      min-width: 28rem;
+    }
+    @media (max-width: $small) {
+      min-height: 16rem;
+      width: 25rem;
+      min-width: 25rem;
+    }
+    box-shadow: 0px 0px 10px 3px $secondary-blue;
   }
   &__img {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
   &__logo-ctn {
     position: relative;
@@ -153,8 +164,13 @@
     width: 100%;
   }
   &__title {
-    font-size: 3rem !important;
-    color: black !important;
+    font-size: 2.5rem;
+    color: black;
+    height: 100%;
+    width: 100%;
+    @media (max-width: $largest) {
+      font-size: 2rem;
+    }
   }
   &__description {
     color: black !important;
@@ -166,7 +182,15 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    gap: 2rem;
+  }
+  &__title-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0rem 2rem;
   }
   &__details {
     display: flex;
