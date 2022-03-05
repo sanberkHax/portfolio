@@ -1,4 +1,3 @@
-import Card from './Card';
 import Button from './Button';
 import { motion } from 'framer-motion';
 
