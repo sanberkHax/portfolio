@@ -1,56 +1,95 @@
 import Button from './Button';
-import Arrows from './Arrows';
+import { blueArrowSvg, whiteArrowSvg } from '../assets/svgPaths';
+import { motion } from 'framer-motion';
+
 const Contact = () => {
   const submitHandler = (e) => {
     e.preventDefault();
   };
   return (
     <section id="contact" className="contact">
-      <h1 data-aos-once="true" data-aos="fade-right">
-        Contact Me
-      </h1>
-      <div
-        data-aos="fade-in"
-        data-aos-once="true"
-        data-aos-anchor-position="top-bottom"
-        className="contact-content"
+      <motion.h1
+        initial={{ opacity: 0, x: -400 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
+        className="contact__title"
       >
-        <form name="contact" action="" className="form" data-netlify="true">
+        Contact Me
+      </motion.h1>
+      <div className="contact__content">
+        <motion.form
+          initial={{ opacity: 0, x: -400 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
+          viewport={{ once: true }}
+          name="contact"
+          action=""
+          className="contact__form"
+          data-netlify="true"
+        >
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name">Name</label>
-          <input
-            data-aos-once="true"
-            data-aos-anchor-placement="top-bottom"
-            data-aos="fade-right"
+          <motion.input
+            initial={{ opacity: 0, x: -400 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 30,
+              duration: 0.6,
+              delay: 0.2,
+            }}
+            viewport={{ once: true }}
             className="name-input"
             type="text"
             name="name"
           />
           <label htmlFor="email">E-Mail</label>
-          <input
-            data-aos-once="true"
-            data-aos-anchor-placement="top-bottom"
-            data-aos="fade-right"
+          <motion.input
+            initial={{ opacity: 0, x: -400 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 30,
+              duration: 0.6,
+              delay: 0.3,
+            }}
+            viewport={{ once: true }}
             className="email-input"
             name="email"
             type="text"
           />
           <label htmlFor="message">Message</label>
-          <textarea
-            data-aos-once="true"
-            delay="500"
-            data-aos-anchor-placement="top-bottom"
-            data-aos="fade-right"
+          <motion.textarea
+            initial={{ opacity: 0, x: -400 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 30,
+              duration: 0.6,
+              delay: 0.4,
+            }}
+            viewport={{ once: true }}
             className="msg-input"
             name="message"
           />
-          <Button class="send-btn" text="Send"></Button>
-        </form>
-        <Arrows class="contact-arrows-ctn" href="#home"></Arrows>
-        {/* <div className="contact-arrow-ctn">
+          <Button onClick={submitHandler} className="btn" text="Send" />
+        </motion.form>
+        <motion.div
+          initial={{ opacity: 0, x: 400 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            type: 'spring',
+            bounce: 0.2,
+            delay: 1,
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+          className="contact-arrows-ctn"
+        >
           <a href="#home">{whiteArrowSvg}</a>
           <a href="#home">{blueArrowSvg}</a>
-        </div> */}
+        </motion.div>
       </div>
     </section>
   );

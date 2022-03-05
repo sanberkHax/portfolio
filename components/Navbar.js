@@ -1,10 +1,6 @@
-import { useCallback, useEffect, useState } from 'react';
-import { githubSvg, twitterSvg } from '../assets/svgPaths';
-
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="socials"></div>
       <ul className="nav">
         <li>
           <a href="#home" className="link">

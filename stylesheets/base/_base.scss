@@ -63,3 +63,12 @@ main {
     padding: 0;
   }
 }
+
+input,
+textarea {
+  background: white;
+  box-shadow: -7px 8px 0px #00d1ff;
+  border-radius: 5px;
+  padding: 2rem;
+  border: none;
+}

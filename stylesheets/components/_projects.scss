@@ -3,14 +3,24 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-
-  margin-top: 25rem;
+  justify-content: center;
+  scroll-margin-top: 5rem;
   align-items: center;
+  gap: 5rem;
+  padding: 0 4rem;
+  @media (max-width: $large) {
+    height: auto;
+  }
   .details-btn {
     align-self: center;
   }
-  h1 {
+
+  @media (max-width: $small) {
+    padding: 0 1rem;
+  }
+  &__title {
     margin-top: 1rem;
+    width: 100%;
     align-self: center;
     position: relative;
     &::after {
@@ -18,16 +28,18 @@
       position: absolute;
       background-color: $primary-blue;
       height: 3px;
-      width: 12rem;
-      left: 2rem;
+      width: 9rem;
+      left: 1rem;
       right: 0;
-      top: 60px;
+      top: 3rem;
       bottom: 0;
-      @media (max-width: $medium) {
-        top: 45px;
-        left: 1rem;
-        width: 9rem;
+      @media (max-width: $small) {
+        left: 2.5rem;
+        width: 80%;
       }
+    }
+    @media (max-width: $small) {
+      text-align: center;
     }
   }
   h2 {
@@ -35,7 +47,6 @@
       font-size: 2rem;
     }
     font-size: 4rem;
-    padding-top: 16rem;
     text-align: center;
   }
 }
@@ -78,5 +89,90 @@
       width: 100%;
       background-color: white;
     }
+  }
+}
+
+.stack-organizer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  p {
+    color: white;
+  }
+  h2 {
+    padding: 0;
+    margin: 0;
+  }
+  &-ctn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    @media (max-width: $large) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+  &__img-ctn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 39rem;
+    @media (max-width: $large) {
+      min-height: 20rem;
+      min-width: 20rem;
+    }
+  }
+  &__img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__logo-ctn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+  &__logo {
+    object-fit: contain;
+    width: 100%;
+  }
+  &__title {
+    font-size: 3rem !important;
+    color: black !important;
+  }
+  &__description {
+    color: black !important;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 2rem;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
   }
 }

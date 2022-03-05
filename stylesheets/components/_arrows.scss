@@ -26,9 +26,12 @@
   animation-timing-function: ease-in-out;
 }
 
-.home-arrows-ctn {
+.home-arrows {
   @extend %arrows;
   margin-top: 10rem;
+  @media (max-width: $small) {
+    margin-top: 6rem;
+  }
   svg {
     transform: rotate(90deg);
   }

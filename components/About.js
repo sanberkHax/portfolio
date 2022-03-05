@@ -1,6 +1,5 @@
 import Card from './Card';
 import Button from './Button';
-import FadeInContainer from './FadeInContainer';
 import { motion } from 'framer-motion';
 
 import {
@@ -17,28 +16,32 @@ import {
   psSvg,
   gitSvg,
 } from '../assets/svgPaths';
-const aboutMeVariants = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  hidden: { opacity: 0, x: -50 },
-};
-const skillsVariants = {
-  visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-  hidden: { opacity: 0, x: 50 },
-};
-const resumeBtnVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-  hidden: { opacity: 0, scale: 0 },
-};
+
 const About = () => {
   return (
     <section id="about" className="about">
-      <div className="about-content">
-        <div
-          data-aos="fade-right"
-          variants={aboutMeVariants}
-          className="about-me-ctn"
+      <div className="about__content">
+        <motion.div
+          initial={{ opacity: 0, x: -300 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          onViewportEnter={() => console.log('girdi')}
+          transition={{ type: 'spring', stiffness: 30, duration: 1 }}
+          viewport={{ once: true }}
+          className="about-me"
         >
-          <h1>About Me</h1>
+          <motion.h1
+            initial={{ opacity: 0, x: -300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 30,
+              duration: 0.5,
+            }}
+            viewport={{ once: true }}
+            className="about-me__title"
+          >
+            About Me
+          </motion.h1>
           <Card>
             <p>
               {`I'm a Front End Developer with a strong passion for learning new things and challenging myself to be the best version of myself. The more problems i face the more ambitious i get to solve them, not gonna bend the knee to no bug!`}
@@ -47,23 +50,31 @@ const About = () => {
             <p>{`I'm looking forward to building ambitious and valuable projects that are creative and accesible to anyone.`}</p>
             <p>{`Besides coding, i love making music and drawing. Send a message to say hi!`}</p>
           </Card>
-          <Button
-            variants={resumeBtnVariants}
-            class="resume-btn"
-            text="Resume"
-          ></Button>
-        </div>
+          <Button className="btn" text="Resume"></Button>
+        </motion.div>
 
-        <div
-          data-aos="fade-left"
-          variants={skillsVariants}
-          className="skills-ctn"
+        <motion.div
+          initial={{ opacity: 0, x: 300 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ type: 'spring', stiffness: 30, duration: 1 }}
+          viewport={{ once: true }}
+          className="skills"
         >
-          <h1 className="skills-title">{`I have worked with`}</h1>
-          <div className="skills-details-ctn">
-            <div className="development-ctn">
-              <h2 className="development-title">Development</h2>
-              <div className="development-icons-ctn">
+          <motion.h1
+            initial={{ opacity: 0, x: 300 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{
+              type: 'spring',
+              stiffness: 30,
+              duration: 0.5,
+            }}
+            viewport={{ once: true }}
+            className="skills__title"
+          >{`I have worked with`}</motion.h1>
+          <div className="skills__details">
+            <div className="development">
+              <h2 className="development__title">Development</h2>
+              <div className="development__icons">
                 {htmlSvg}
                 {cssSvg}
                 {jsSvg}
@@ -73,17 +84,17 @@ const About = () => {
                 {jestSvg}
               </div>
             </div>
-            <div className="design-tools-ctn">
-              <div className="design-ctn">
-                <h2 className="design-title">Design</h2>
-                <div className="design-icons-ctn">
+            <div className="design-and-tools">
+              <div className="design">
+                <h2 className="design__title">Design</h2>
+                <div className="design__icons">
                   {figmaSvg}
                   {psSvg}
                 </div>
               </div>
-              <div className="tools-ctn">
-                <h2 className="tools-title">Tools</h2>
-                <div className="tools-icons-ctn">
+              <div className="tools">
+                <h2 className="tools__title">Tools</h2>
+                <div className="tools__icons">
                   {gitSvg}
                   {webpackSvg}
                   {npmSvg}
@@ -91,17 +102,8 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <motion.div
-        data-aos="slide-right"
-        data-aos-offset="1000"
-        // initial={{ x: -2500 }}
-        // animate={{ x: 230 }}
-        // transition={{ delay: 1, duration: 1 }}
-        className="skew-3"
-      ></motion.div>
-      {/* <Arrows href="#projects"></Arrows> */}
     </section>
   );
 };

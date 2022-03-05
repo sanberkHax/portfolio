@@ -3,158 +3,121 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-top: 35rem;
-  &:before {
-    display: block;
-    content: ' ';
-    margin-top: 3rem;
-    height: 3rem;
-    visibility: hidden;
-    pointer-events: none;
-    @media (max-width: $medium) {
-      margin-top: 0.5rem;
-      height: 0.5rem;
-    }
-  }
+  height: 100vh;
+  flex-direction: column;
+  scroll-margin-top: 10rem;
 
-  @media (max-width: 1500px) {
-  }
   @media (max-width: $large) {
     height: auto;
-    margin-top: 15rem;
   }
-  flex-direction: column;
-
-  .about-content {
+  &__content {
     @media (max-width: $large) {
+      height: auto;
       flex-direction: column;
+      gap: 20rem;
     }
     display: flex;
     justify-content: center;
-
+    height: 100vh;
     position: relative;
   }
-  .about-me-ctn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    padding: 0 4rem;
-    position: relative;
-    @media (max-width: $large) {
-      padding: 3rem;
-    }
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 0 4rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $primary-blue;
+    height: 3px;
+    width: 11rem;
+    left: 6rem;
+    right: 0;
+    top: 4rem;
+    bottom: 0;
     @media (max-width: $small) {
-      padding: 1rem;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      background-color: $primary-blue;
-      height: 3px;
-      width: 10rem;
-      left: 4.5rem;
-      right: 0;
-      top: 4rem;
-      bottom: 0;
-      @media (max-width: $large) {
-        width: 10rem;
-        top: 7rem;
-        left: 4.5rem;
-      }
-      @media (max-width: $small) {
-        width: 10rem;
-        top: 5rem;
-        left: 2.5rem;
-      }
-    }
-    .card {
-      margin-top: 4rem;
-      @media (max-width: $small) {
-        margin-top: 1rem;
-        padding: 1rem;
-      }
+      left: 2.5rem;
+      width: 80%;
     }
   }
-  .skills-ctn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-    padding: 0 3rem;
-    position: relative;
-    @media (max-width: $large) {
-      padding: 3rem;
-    }
+  @media (max-width: $small) {
+    padding: 0 1rem;
+  }
+  &__title {
     @media (max-width: $small) {
-      padding: 1rem;
-    }
-
-    .skills-title {
-      &::after {
-        content: '';
-        position: absolute;
-        background-color: $primary-blue;
-        height: 3px;
-        width: 20rem;
-        left: 4.5rem;
-        right: 0;
-        top: 4rem;
-        bottom: 0;
-        @media (max-width: $large) {
-          width: 20rem;
-          top: 7rem;
-          left: 4.5rem;
-        }
-        @media (max-width: $small) {
-          width: 20rem;
-          top: 5rem;
-          left: 2.5rem;
-        }
-      }
-    }
-    .skills-details-ctn {
-      svg {
-        @media (max-width: $large) {
-          width: 4.5rem;
-        }
-
-        path {
-          fill: $secondary-blue;
-        }
-        &:hover path {
-          fill: white;
-        }
-        margin: 10px;
-        width: 5rem;
-      }
+      text-align: center;
     }
   }
 }
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 0 3rem;
+  position: relative;
+  @media (max-width: $small) {
+    padding: 0 1rem;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $primary-blue;
+    height: 3px;
+    width: 21rem;
+    right: 0;
+    left: 4rem;
+    top: 4rem;
+    bottom: 0;
+    @media (max-width: $small) {
+      left: 2.5rem;
+      width: 80%;
+    }
+  }
+  &__title {
+    @media (max-width: $small) {
+      text-align: center;
+    }
+  }
+  &__details {
+    svg {
+      @media (max-width: $large) {
+        width: 4.5rem;
+      }
 
-.development-ctn {
+      path {
+        fill: $secondary-blue;
+      }
+      &:hover path {
+        fill: white;
+      }
+      margin: 10px;
+      width: 5rem;
+    }
+  }
+}
+.development {
+  margin-top: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
-.design-tools-ctn {
+.design-and-tools {
   text-align: center;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-
-  .design-ctn {
-    flex-basis: 50%;
-    position: relative;
-  }
-  .tools-ctn {
-    flex-basis: 50%;
-    position: relative;
-  }
 }
-.skew-3 {
-  overflow: hidden;
-  background: #ffffff;
-  border-top: 2rem solid $primary-blue;
-  border-bottom: 2rem solid $primary-blue;
+.design {
+  flex-basis: 50%;
+  position: relative;
+}
+.tools {
+  flex-basis: 50%;
+  position: relative;
 }

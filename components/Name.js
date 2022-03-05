@@ -1,35 +1,35 @@
 import Button from '../components/Button';
+import { motion } from 'framer-motion';
 
-const contactBtnVariants = {
-  visible: { opacity: 1, scale: 1, transition: { delay: 1, duration: 1 } },
-  hidden: { opacity: 0, scale: 0 },
-};
 const Name = () => {
   return (
-    <div
-      className="name-ctn"
-      initial={{ opacity: 0, x: -300 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <h2 data-aos="fade-right" data-aos-delay="200" className="name-text-1">
+    <motion.div className="name">
+      <motion.h2
+        initial={{ opacity: 0, x: -600 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
+        className="name__primary-text"
+      >
         {`Hi, I'm`}
-      </h2>
-      <h1 data-aos="fade-right" data-aos-delay="200" className="name-text-2">
+      </motion.h2>
+      <motion.h1
+        initial={{ opacity: 0, x: -900 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ type: 'spring', bounce: 0.2, duration: 0.6, delay: 0.5 }}
+        className="name__secondary-text"
+      >
         Sanberk Türker
-      </h1>
-      <h2 data-aos="fade-right" data-aos-delay="600" className="name-text-3">
+      </motion.h1>
+      <motion.h2
+        initial={{ opacity: 0, x: -1200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ type: 'spring', bounce: 0.2, duration: 0.6, delay: 1 }}
+        className="name__tertiary-text"
+      >
         Front End Developer
-      </h2>
-      <Button
-        href="#contact"
-        variants={contactBtnVariants}
-        delay="1000"
-        type="button"
-        class="contact-btn"
-        text="Contact Me"
-      ></Button>
-    </div>
+      </motion.h2>
+      <Button href="#contact" className=" btn name__btn" text="Contact Me" />
+    </motion.div>
   );
 };
 
