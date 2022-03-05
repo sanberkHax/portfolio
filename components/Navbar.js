@@ -1,6 +1,13 @@
+import { motion } from 'framer-motion';
+
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <motion.nav
+      initial={{ opacity: 0, x: 600 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ type: 'spring', bounce: 0.2, duration: 0.5 }}
+      className="navbar"
+    >
       <ul className="nav">
         <li>
           <a href="#home" className="link">
@@ -23,7 +30,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 
