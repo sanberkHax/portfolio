@@ -28,7 +28,16 @@
   flex-basis: 50%;
   padding: 0 4rem;
   position: relative;
-
+  gap: 4rem;
+  &__text {
+    margin-top: 5rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    p {
+      color: white;
+    }
+  }
   &::after {
     content: '';
     position: absolute;
@@ -100,7 +109,6 @@
   }
 }
 .development {
-  margin-top: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;

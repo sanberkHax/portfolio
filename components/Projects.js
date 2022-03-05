@@ -14,14 +14,18 @@ const Projects = () => {
       <h1 className="projects__title">Projects</h1>
       <div className="stack-organizer">
         <div className="stack-organizer-ctn">
-          <div className="stack-organizer__img-ctn" href="/stack-organizer">
-            <Image
-              className="stack-organizer__img"
-              src="/Stack-Organizer.png"
-              alt="stack organizer screenshot"
-              layout="fill"
-            />
-          </div>
+          <Link href="/stack-organizer" passHref>
+            <div className="stack-organizer__img-ctn" href="/stack-organizer">
+              <Image
+                className="stack-organizer__img"
+                src="/Stack-Organizer.png"
+                alt="stack organizer screenshot"
+                layout="fill"
+                priority
+              />
+            </div>
+          </Link>
+
           <div className="stack-organizer__details">
             <div className="card stack-organizer__title-card">
               <h2 className="stack-organizer__title">Stack Organizer</h2>

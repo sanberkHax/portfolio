@@ -10,7 +10,7 @@ const Name = () => {
         transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
         className="name__primary-text"
       >
-        {`Hi, I'm`}
+        {`Hello there, I'm`}
       </motion.h2>
       <motion.h1
         initial={{ opacity: 0, x: -900 }}

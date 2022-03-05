@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <section id="contact" className="contact">
       <motion.h1
-        initial={{ opacity: 0, x: -400 }}
+        initial={{ opacity: 0, x: -300 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
@@ -19,19 +19,20 @@ const Contact = () => {
       </motion.h1>
       <div className="contact__content">
         <motion.form
-          initial={{ opacity: 0, x: -400 }}
+          initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
           viewport={{ once: true }}
           name="contact"
           action=""
-          className="contact__form"
+          className="contact-form"
           data-netlify="true"
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className="contact-form__label">
+            Name
+          </label>
           <motion.input
-            initial={{ opacity: 0, x: -400 }}
+            initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
@@ -40,13 +41,15 @@ const Contact = () => {
               delay: 0.2,
             }}
             viewport={{ once: true }}
-            className="name-input"
+            className="contact-form__input"
             type="text"
             name="name"
           />
-          <label htmlFor="email">E-Mail</label>
+          <label htmlFor="email" className="contact-form__label">
+            E-Mail
+          </label>
           <motion.input
-            initial={{ opacity: 0, x: -400 }}
+            initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
@@ -55,13 +58,15 @@ const Contact = () => {
               delay: 0.3,
             }}
             viewport={{ once: true }}
-            className="email-input"
+            className="contact-form__input"
             name="email"
             type="text"
           />
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message" className="contact-form__label">
+            Message
+          </label>
           <motion.textarea
-            initial={{ opacity: 0, x: -400 }}
+            initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
               type: 'spring',
@@ -70,13 +75,13 @@ const Contact = () => {
               delay: 0.4,
             }}
             viewport={{ once: true }}
-            className="msg-input"
+            className="contact-form__textarea"
             name="message"
           />
           <Button onClick={submitHandler} className="btn" text="Send" />
         </motion.form>
         <motion.div
-          initial={{ opacity: 0, x: 400 }}
+          initial={{ opacity: 0, x: 300 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{
             type: 'spring',

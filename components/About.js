@@ -42,14 +42,14 @@ const About = () => {
           >
             About Me
           </motion.h1>
-          <Card>
+          <div className="card about-me__card">
             <p>
-              {`I'm a Front End Developer with a strong passion for learning new things and challenging myself to be the best version of myself. The more problems i face the more ambitious i get to solve them, not gonna bend the knee to no bug!`}
+              {`I'm a Front End Developer with a strong passion for learning and challenging myself to be the best version of myself. The more problems i face the more ambitious i get to solve them.`}
             </p>
-            <p>{`Chronic perfectionist with a high attention to every detail, quick thinker, problem solver, organised person, intuitive user experience lover.`}</p>
+            <p>{`Chronic , quick thinker, problem solver, organized person, intuitive user experience lover.`}</p>
             <p>{`I'm looking forward to building ambitious and valuable projects that are creative and accesible to anyone.`}</p>
-            <p>{`Besides coding, i love making music and drawing. Send a message to say hi!`}</p>
-          </Card>
+            <p>{``}</p>
+          </div>
           <Button className="btn" text="Resume"></Button>
         </motion.div>
 

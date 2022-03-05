@@ -4,10 +4,6 @@
 
 .btn {
   cursor: pointer;
-  margin-top: 5rem;
-  @media (max-width: $medium) {
-    margin: 2rem;
-  }
   text-align: center;
   line-height: 2.5rem;
   height: 3rem;

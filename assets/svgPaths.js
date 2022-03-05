@@ -5,7 +5,7 @@ export const htmlSvg = (
     <motion.svg
       initial={{ scale: 0 }}
       whileInView={{
-        scale: [1, 2, 1],
+        scale: 1,
       }}
       viewport={{ once: true }}
       viewBox="0 0 128 128"
@@ -23,7 +23,7 @@ export const cssSvg = (
     <motion.svg
       initial={{ scale: 0 }}
       whileInView={{
-        scale: [1, 2, 1],
+        scale: 1,
       }}
       viewport={{ once: true }}
       transition={{ delay: 0.1 }}
@@ -42,7 +42,7 @@ export const jsSvg = (
     <motion.svg
       initial={{ scale: 0 }}
       whileInView={{
-        scale: [1, 2, 1],
+        scale: 1,
       }}
       viewport={{ once: true }}
       transition={{ delay: 0.2 }}
@@ -61,7 +61,7 @@ export const reactSvg = (
     <motion.svg
       initial={{ scale: 0 }}
       whileInView={{
-        scale: [1, 2, 1],
+        scale: 1,
       }}
       viewport={{ once: true }}
       transition={{ delay: 0.3 }}
@@ -80,7 +80,7 @@ export const reduxSvg = (
     <motion.svg
       initial={{ scale: 0 }}
       whileInView={{
-        scale: [1, 2, 1],
+        scale: 1,
       }}
       viewport={{ once: true }}
       transition={{ delay: 0.4 }}
@@ -99,7 +99,7 @@ export const sassSvg = (
     <motion.svg
       initial={{ scale: 0 }}
       whileInView={{
-        scale: [1, 2, 1],
+        scale: 1,
       }}
       viewport={{ once: true }}
       transition={{ delay: 0.5 }}
@@ -120,7 +120,7 @@ export const jestSvg = (
     <motion.svg
       initial={{ scale: 0 }}
       whileInView={{
-        scale: [1, 2, 1],
+        scale: 1,
       }}
       viewport={{ once: true }}
       transition={{ delay: 0.6 }}
@@ -137,9 +137,9 @@ export const jestSvg = (
 export const figmaSvg = (
   <a href="https://www.figma.com/">
     <motion.svg
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: 0.7 }}
       viewport={{ once: true }}
       viewBox="0 0 128 128"
     >
@@ -151,9 +151,9 @@ export const figmaSvg = (
 export const psSvg = (
   <a href="https://www.adobe.com/products/photoshop.html">
     <motion.svg
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: 0.8 }}
       viewport={{ once: true }}
       viewBox="0 0 128 128"
     >
@@ -170,9 +170,9 @@ export const psSvg = (
 export const gitSvg = (
   <a href="https://git-scm.com/">
     <motion.svg
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: 0.9 }}
       viewport={{ once: true }}
       viewBox="0 0 128 128"
     >
@@ -374,9 +374,9 @@ export const menuSvg = (
 export const webpackSvg = (
   <a href="https://webpack.js.org/">
     <motion.svg
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: 1 }}
       viewport={{ once: true }}
       viewBox="0 0 128 128"
     >
@@ -390,10 +390,9 @@ export const webpackSvg = (
 export const npmSvg = (
   <a href="https://www.npmjs.com/">
     <motion.svg
-      initial={{ opacity: 0, scale: 0 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      transition={{ delay: 1.1 }}
       viewBox="0 0 128 128"
     >
       <path

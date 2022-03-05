@@ -9,14 +9,14 @@ import { twitterSvg, githubSvg, gmailSvg } from '../assets/svgPaths';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className="index">
       <Head>
         <title>Portfolio</title>
         <meta name="description" content="My Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="index">
+      <main className="index__main">
         <Home />
         <About />
         <Projects />

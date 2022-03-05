@@ -1,6 +1,12 @@
 .index {
   display: flex;
   flex-direction: column;
-  gap: 20rem;
   justify-content: space-around;
+  gap: 2rem;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20rem;
+  }
 }
