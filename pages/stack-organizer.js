@@ -118,7 +118,7 @@ const Project = () => {
             <div className="card">
               <p>
                 My first step was researching how real world projects are built
-                from start to finish. As this was my first "big" project, I
+                from start to finish. As this was my first {'big'}project, I
                 needed to learn a lot about how to plan a project.
               </p>
               <p>
@@ -178,19 +178,19 @@ const Project = () => {
                 Sass.
               </p>
               <p>
-                However, there were a lot of things that needed to work together
+                {`However, there were a lot of things that needed to work together
                 besides presentational components. So when I started
                 implementing stuff like Redux, Firebase and Automated Testing on
                 top of them, I've encountered a bunch of mind numbing bugs. But
                 thanks to my Googling and problem solving skills I was able to
-                crush them in the end.
+                crush them in the end.`}
               </p>
               <p>
-                Building process was also a learning process for me. There were
+                {`Building process was also a learning process for me. There were
                 a lot of stuff I didn't know how to do and a lot of bugs I
                 haven't encountered before. So most of my time was also spent on
                 learning new things, trying different approaches, making lots of
-                mistakes along the way but eventually learning from them.
+                mistakes along the way but eventually learning from them.`}
               </p>
             </div>
           </div>
@@ -215,12 +215,12 @@ const Project = () => {
                 highly underestimated how complicated the file system was.
               </p>
               <p>
-                As I dived into implementation in the "Save As" modal first and
+                {` As I dived into implementation in the "Save As" modal first and
                 succesfully implemented project selection, I got completely
                 stuck with the folder selection. Since it needed to have nested
                 folders, it couldn't just be a dropdown selection. And because I
                 had a very specific design for it, I couldn't find any third
-                party library to fit my needs.
+                party library to fit my needs.`}
               </p>
               <p>
                 After days of researching how to properly store nested data in
@@ -238,10 +238,10 @@ const Project = () => {
             <h3>Firebase</h3>
             <div className="card">
               <p>
-                Even though I've used Firebase in my other projects before, none
-                of those projects scale was as big as this one. So I spent few
-                days how to properly integrate Firebase with Automated Testing
-                and Redux.
+                Even though {`I've`} used Firebase in my other projects before,
+                none of those projects scale was as big as this one. So I spent
+                few days how to properly integrate Firebase with Automated
+                Testing and Redux.
               </p>
               <p>
                 After dealing with bunch of small bugs, I eventually set up
@@ -263,8 +263,8 @@ const Project = () => {
               way for me to learn something.
             </p>
             <p>
-              I've learned how to manage complex states with Redux and how to
-              store data efficiently in database to work with.
+              {`I've`} learned how to manage complex states with Redux and how
+              to store data efficiently in database to work with.
             </p>
             <p>Greatly improved my knowledge on Automated Testing.</p>
             <p>
