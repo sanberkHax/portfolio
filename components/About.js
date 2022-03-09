@@ -23,7 +23,6 @@ const About = () => {
         <motion.div
           initial={{ opacity: 0, x: -300 }}
           whileInView={{ opacity: 1, x: 0 }}
-          onViewportEnter={() => console.log('girdi')}
           transition={{ type: 'spring', stiffness: 30, duration: 1 }}
           viewport={{ once: true }}
           className="about-me"
@@ -43,11 +42,20 @@ const About = () => {
           </motion.h1>
           <div className="card about-me__card">
             <p>
-              {`I'm a Front End Developer with a strong passion for learning and challenging myself to be the best version of myself. The more problems i face the more ambitious i get to solve them.`}
+              {
+                "Hi, I'm a Front End Developer who is motivated by the passion for learning new things and strive to outdo myself. The more problems I encounter, the more ambitious I get to solve them. That's why I like tough challenges I might fail in, as failure is the best way to learn and overcome something."
+              }
             </p>
-            <p>{`Chronic , quick thinker, problem solver, organized person, intuitive user experience lover.`}</p>
-            <p>{`I'm looking forward to building ambitious and valuable projects that are creative and accesible to anyone.`}</p>
-            <p>{``}</p>
+            <p>
+              {
+                'When I was first introduced to Front End Development, I immediately knew this was the path I wanted to dedicate my time and effort into, as this was the perfect combination of my logical and creative sides. And combination of both is my shortcut to happiness.'
+              }
+            </p>
+            <p>
+              {
+                "I'm interested in working on creative and ambitious projects that are accessible to anyone."
+              }
+            </p>
           </div>
           <Button className="btn" text="Resume"></Button>
         </motion.div>

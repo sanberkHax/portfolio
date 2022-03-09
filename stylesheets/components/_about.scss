@@ -43,12 +43,18 @@
     position: absolute;
     background-color: $primary-blue;
     height: 3px;
-    width: 11rem;
-    left: 6rem;
+    width: 15rem;
+    left: 6.5rem;
     right: 0;
-    top: 4rem;
+    top: 6rem;
     bottom: 0;
+    @media (max-width: $medium) {
+      width: 13rem;
+      top: 5rem;
+      left: 6rem;
+    }
     @media (max-width: $small) {
+      top: 4rem;
       left: 2.5rem;
       width: 80%;
     }
@@ -76,12 +82,18 @@
     position: absolute;
     background-color: $primary-blue;
     height: 3px;
-    width: 21rem;
+    width: 29rem;
     right: 0;
-    left: 4rem;
-    top: 4rem;
+    left: 5rem;
+    top: 6rem;
     bottom: 0;
+    @media (max-width: $medium) {
+      width: 25rem;
+      top: 5rem;
+      left: 5rem;
+    }
     @media (max-width: $small) {
+      top: 4rem;
       left: 2.5rem;
       width: 80%;
     }

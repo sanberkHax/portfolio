@@ -4,4 +4,17 @@
   border-radius: 5px;
   padding: 2rem;
   border: none;
+  color: black;
+  width: 100%;
+  @media (max-width: $small) {
+    padding: 1rem;
+  }
+  &__ctn {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
 }

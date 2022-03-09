@@ -18,7 +18,7 @@ const Projects = () => {
             <div className="stack-organizer__img-ctn" href="/stack-organizer">
               <Image
                 className="stack-organizer__img"
-                src="/Stack-Organizer.png"
+                src="/stack-organizer.png"
                 alt="stack organizer screenshot"
                 layout="fill"
                 priority

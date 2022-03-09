@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <div className="index">
       <Head>
-        <title>Portfolio</title>
+        <title>Sanberk Türker</title>
         <meta name="description" content="My Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

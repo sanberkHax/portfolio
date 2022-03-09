@@ -1,0 +1,280 @@
+.stack-organizer-details {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+  @media (max-width: $small) {
+    padding: 5rem 1rem;
+  }
+  &__heading {
+    align-self: center;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $primary-blue;
+      height: 3px;
+      width: 26rem;
+      left: 2rem;
+      right: 0;
+      top: 4rem;
+      bottom: 0;
+      @media (max-width: $small) {
+        left: 1rem;
+        top: 3rem;
+        width: 100%;
+      }
+    }
+  }
+  &__img-ctn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44rem;
+    height: 28rem;
+    @media (max-width: $medium) {
+      width: 30rem;
+      height: 19rem;
+    }
+    @media (max-width: $small) {
+      width: 20rem;
+      height: 12rem;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+  }
+  &__purpose {
+    margin: 10rem;
+    @media (max-width: $large) {
+      margin: 5rem;
+    }
+    @media (max-width: $medium) {
+      margin: 2rem;
+    }
+    @media (max-width: $small) {
+      margin: 10rem 1rem;
+    }
+    s &__heading {
+      text-align: center;
+    }
+  }
+  &__showcase {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__stack {
+    &__heading {
+      text-align: center;
+    }
+    &__icons {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      svg {
+        &:hover {
+          scale: 1.2;
+        }
+        transition: ease-in 0.1s;
+        width: 5rem;
+      }
+    }
+  }
+  &__description {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    p {
+      font-size: 1.2rem;
+      padding: 0 3rem;
+      text-indent: 3rem;
+      color: white;
+    }
+  }
+}
+
+.features {
+  margin: 10rem 0rem;
+
+  text-align: center;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    gap: 10rem;
+    @media (max-width: $large) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 5rem;
+    }
+    &__heading {
+      margin: 0;
+      font-size: 2rem;
+    }
+    &__list {
+      display: flex;
+      padding: 1rem;
+      justify-content: space-between;
+      gap: 5rem;
+    }
+  }
+}
+
+.feature {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  &__video {
+    box-shadow: 0px 0px 10px 3px $secondary-blue;
+  }
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+.process {
+  margin-top: 10rem;
+  text-align: center;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+    @media (max-width: $large) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 0rem;
+    }
+    @media (max-width: $small) {
+      margin: 0rem 1rem;
+    }
+  }
+  &__kanban-ctn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    order: 2;
+    transition: ease-in 0.2s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &__figma-ctn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    order: 3;
+    @media (max-width: $largest) {
+      order: 4;
+    }
+    transition: ease-in 0.2s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__google-ctn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    order: 6;
+    transition: ease-in 0.2s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &__planning {
+    order: 1;
+  }
+  &__designing {
+    order: 4;
+    @media (max-width: $largest) {
+      order: 3;
+    }
+  }
+  &__building {
+    order: 5;
+  }
+}
+
+.problems {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &__container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    display: flex;
+    @media (max-width: $largest) {
+      width: 80%;
+    }
+    @media (max-width: $large) {
+      width: 90%;
+    }
+  }
+}
+.learned {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 50%;
+  @media (max-width: $largest) {
+    width: 80%;
+  }
+  @media (max-width: $large) {
+    width: 90%;
+  }
+}
