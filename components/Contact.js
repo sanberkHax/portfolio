@@ -26,6 +26,7 @@ const Contact = () => {
           name="contact"
           className="contact-form"
           data-netlify="true"
+          action=""
         >
           <input type="hidden" name="form-name" value="contact" />
           <label htmlFor="name" className="contact-form__label">
