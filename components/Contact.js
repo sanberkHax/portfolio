@@ -23,12 +23,17 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
           viewport={{ once: true }}
-          name="contact"
+          name="contact-form"
           className="contact-form"
+          data-netlify-honeypot="bot-field"
           data-netlify="true"
-          action=""
         >
-          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out: <input name="bot-field" />
+            </label>
+          </p>
+          <input type="hidden" name="form-name" value="contact-form" />
           <label htmlFor="name" className="contact-form__label">
             Name
           </label>
@@ -79,12 +84,7 @@ const Contact = () => {
             className="contact-form__textarea"
             name="message"
           />
-          <Button
-            onClick={submitHandler}
-            type="submit"
-            className="btn"
-            text="Send"
-          />
+          <Button type="submit" className="btn" text="Send" />
         </motion.form>
         <motion.div
           initial={{ opacity: 0, x: 300 }}
