@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const Button = ({ href, className, text, onClick }) => {
+const Button = ({ href, className, text, onClick, type }) => {
   const clickHandler = (e) => {
     onClick(e);
   };
@@ -25,6 +25,7 @@ const Button = ({ href, className, text, onClick }) => {
           viewport={{ once: true }}
           className={className}
           onClick={clickHandler}
+          type={type === 'submit' ? 'submit' : 'button'}
         >
           {text}
         </motion.button>

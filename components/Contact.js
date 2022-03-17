@@ -24,7 +24,6 @@ const Contact = () => {
           transition={{ type: 'spring', stiffness: 30, duration: 0.6 }}
           viewport={{ once: true }}
           name="contact"
-          action=""
           className="contact-form"
           data-netlify="true"
         >
@@ -78,7 +77,12 @@ const Contact = () => {
             className="contact-form__textarea"
             name="message"
           />
-          <Button onClick={submitHandler} className="btn" text="Send" />
+          <Button
+            onClick={submitHandler}
+            type="submit"
+            className="btn"
+            text="Send"
+          />
         </motion.form>
         <motion.div
           initial={{ opacity: 0, x: 300 }}
