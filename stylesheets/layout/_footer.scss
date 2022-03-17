@@ -20,6 +20,7 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-basis: 10%;
+    gap: 1rem;
     svg {
       @media (max-width: $medium) {
         width: 3rem;

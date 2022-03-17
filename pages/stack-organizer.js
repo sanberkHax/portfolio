@@ -220,12 +220,18 @@ const Project = () => {
                 stuck with the folder selection. Since it needed to have nested
                 folders, it couldn't just be a dropdown selection. And because I
                 had a very specific design for it, I couldn't find any third
-                party library to fit my needs.`}
+                party library that fits my needs.`}
               </p>
               <p>
-                After days of researching how to properly store nested data in
-                redux and database, learning more about normalized data and
-                bunch of trial and errors. I finally managed to make it work.
+                After researching how to properly store nested data in redux and
+                database, learning more about normalized data and bunch of trial
+                and errors. I finally managed to make it work.
+              </p>
+              <p>
+                Deleting a folder was also a challenge because it was also
+                supposed to delete any nested folder inside it. After some
+                brainstorming I wrote a recursive function that looks for every
+                single sub folder inside the folder and deletes them.
               </p>
               <p>
                 While it was a tough challenge, I really enjoyed getting my

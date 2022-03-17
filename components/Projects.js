@@ -11,7 +11,7 @@ const Projects = () => {
       id="projects"
       className="projects"
     >
-      <h1 className="projects__title">Projects</h1>
+      <h1 className="projects__title">Project</h1>
       <div className="stack-organizer">
         <div className="stack-organizer-ctn">
           <Link href="/stack-organizer" passHref>

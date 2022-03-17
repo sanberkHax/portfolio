@@ -4,7 +4,12 @@ import About from '../components/About';
 import Home from '../components/Home';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
-import { twitterSvg, githubSvg, gmailSvg } from '../assets/svgPaths';
+import {
+  twitterSvg,
+  githubSvg,
+  gmailSvg,
+  linkedInSvg,
+} from '../assets/svgPaths';
 
 export default function HomePage() {
   return (
@@ -27,6 +32,7 @@ export default function HomePage() {
           {twitterSvg}
           {githubSvg}
           {gmailSvg}
+          {linkedInSvg}
         </div>
       </footer>
     </div>
