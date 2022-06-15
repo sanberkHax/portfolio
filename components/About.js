@@ -57,13 +57,6 @@ const About = () => {
               }
             </p>
           </div>
-          <a
-            href="/Sanberk_Turker_Resume.pdf"
-            download="Sanberk Türker Resume"
-            className="btn"
-          >
-            Resume
-          </a>
         </motion.div>
 
         <motion.div
