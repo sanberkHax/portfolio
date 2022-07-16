@@ -7,6 +7,8 @@ import {
   htmlSvg,
   cssSvg,
   jsSvg,
+  tsSvg,
+  nextSvg,
   reactSvg,
   reduxSvg,
   sassSvg,
@@ -91,8 +93,10 @@ const About = () => {
                 {htmlSvg}
                 {cssSvg}
                 {jsSvg}
+                {tsSvg}
                 {reactSvg}
                 {reduxSvg}
+                {nextSvg}
                 {sassSvg}
                 {jestSvg}
               </div>
